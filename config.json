@@ -1,0 +1,145 @@
+{
+ "edadMax": 85,
+ "edadMin": 18,
+ "montoMin": 1750905,
+ "pagadurias": [
+  {
+   "activa": true,
+   "colchon": 5000,
+   "formula": "general",
+   "nombre": "Colpensiones",
+   "plazoMax": 180
+  },
+  {
+   "activa": true,
+   "colchon": 20000,
+   "formula": "general",
+   "nombre": "CASUR",
+   "plazoMax": 156
+  },
+  {
+   "activa": true,
+   "colchon": 5000,
+   "formula": "general",
+   "nombre": "Protección",
+   "plazoMax": 180
+  },
+  {
+   "activa": false,
+   "colchon": 15000,
+   "formula": "cremil",
+   "nombre": "CREMIL",
+   "plazoMax": 156
+  },
+  {
+   "activa": false,
+   "colchon": 5000,
+   "formula": "general",
+   "nombre": "Fiduprevisora",
+   "plazoMax": 180
+  }
+ ],
+ "perfiles": [
+  {
+   "comision": 20000,
+   "front": 16.25,
+   "nombre": "Perfil 1"
+  },
+  {
+   "comision": 30000,
+   "front": 21.25,
+   "nombre": "Perfil 2"
+  },
+  {
+   "comision": 50000,
+   "front": 23.25,
+   "nombre": "Perfil 3"
+  },
+  {
+   "comision": 70000,
+   "front": 27.59,
+   "nombre": "Perfil 4"
+  }
+ ],
+ "politica": [
+  {
+   "reglas": [
+    "18 años a 69 con 11 meses $150.000.000",
+    "70 años a 80 con 11 meses $50.000.000",
+    "81 años a 84 con 11 meses $20.000.000",
+    "Todas las entidades maximo plazo de 180 meses,  en excepcion de CREMIL Y CASUR 156 meses"
+   ],
+   "titulo": "Montos por edad y plazos"
+  },
+  {
+   "reglas": [
+    "**Desde 60 días de mora se normaliza**:  (Aplica financiero No Libranza)",
+    "libranza opera al 100% y presenta mora hasta 90 dias (normalizar)",
+    "libranza sin operar asi este al dia (se recoge al 100%)",
+    "cooperativas y fondos de empleados ( se recoge desde los 30 dias de mora)",
+    "Sector financiero: Cartera castigada se debe sanear en su totalidad",
+    "*se omiten hipotecario y vehículo*"
+   ],
+   "titulo": "Moras Sector Financiero"
+  },
+  {
+   "reglas": [
+    "Libranza en mora operando al 100%: se normaliza.",
+    "Libranza sin operar: se recoge en su totalidad.",
+    "Sector real: hasta $25M sin normalizar  Casur y Cremil hasta $10M en 1 obligación.",
+    "Telcos: hasta $25M y $5M Casur y Cremil sin normalizar."
+   ],
+   "titulo": "Moras Sector Real"
+  },
+  {
+   "reglas": [
+    "[Condicionado] Cooperativa, fondo de empleados o familia abierto: Debe soportar cierre. Se solicitan procesos con actuaciones en los ultimos 5 años de antigüedad.",
+    "[Negado] Embargo en desprendible de nómina · penal abierto · insolvencia · desde el 7.º proceso en contra."
+   ],
+   "titulo": "Embargos y procesos"
+  },
+  {
+   "reglas": [
+    "Se compra hasta 3 carteras del desprendible de diferentes entidades",
+    "CREMIL Y CASUR hasta 2 compras de cartera",
+    "Se recogen todas las entidades (segun politica)",
+    "Se compra Banco Union (Bajo excepcion, sujeto a decision de fabrica)"
+   ],
+   "titulo": "Compras de cartera"
+  },
+  {
+   "reglas": [
+    "Se solicitan de los ultimos 2 meses",
+    "Si el cliente presenta mas de 6 huellas de consulta en los ultimos 2 meses ( Condicionado)"
+   ],
+   "titulo": "Huellas de Consulta"
+  },
+  {
+   "reglas": [
+    "Cédula del titular",
+    "Ultimo desprendible de nomina (PDF Original)",
+    "Clave Pagaduria"
+   ],
+   "titulo": "Documentos para radicar"
+  }
+ ],
+ "seguroMillon": 1200,
+ "tasaMV": 1.65,
+ "topesEdad": [
+  {
+   "desde": 18,
+   "hasta": 69,
+   "montoMax": 150000000
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "montoMax": 50000000
+  },
+  {
+   "desde": 81,
+   "hasta": 85,
+   "montoMax": 20000000
+  }
+ ]
+}
